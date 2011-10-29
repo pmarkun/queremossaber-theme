@@ -1,22 +1,14 @@
-Alavetelitheme
-==============
+Queremos Saber (We want to know)
+================================
 
-This is a "hello world" type theme package for Alaveteli.
+Part of QueremosSaber.org.br, a brazilian freedom of information portal.
 
-The intention is to support simple overlaying of templates and
-resources without the need to touch the core Alaveteli software.
-
-Typical usage should be limited to:
-
- * Putting CSS-based customisations in `public/stylesheets/custom.css`
-
- * Creating your own versions of non-functional pages (like "about
-   us", at `lib/views/help/about.rhtml` -- and/or localised versions at
-   lib/views/help/about.es.rhtml)
+This extension takes care of overlaying of templates and resources without 
+the need to touch the core Alaveteli software.
 
 To install::
  
-  ./script/plugin install git://github.com/sebbacon/alavetelitheme.git
+  ./script/plugin install git://github.com/okfn/queremossaber.git
 
 Look in the lib/ folder of the plugin to see how the overrides happen.
 
@@ -24,3 +16,4 @@ Note that the `install.rb` plugin point sets up a symlink to include
 local resource files within the Rails `public/` directory.
 
 Copyright (c) 2011 mySociety, released under the MIT license
+Copyright (c) 2011 Transparencia Hackers, same license
