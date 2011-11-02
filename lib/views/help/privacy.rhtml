@@ -2,18 +2,28 @@
 
 <%= render :partial => 'sidebar' %>
 
-<h1 id="privacy">Sua privacidade</h1>
-<dl><dt id="email_address">Quem poderá ver meu endereço de e-mail? <a href="http://queremossaber.org.br/help/privacy#email_address">#</a></dt><dd>Nós não vamos mostrar seu endereço de e-mail pra ninguém a não ser que sejamos obrigados pela lei, o que você nos peça para fazer isso. Isso significa que não mostraremos seu endereço de e-mail para o órgão público a quem você está enviando um pedido. Eles vão apenas ver um email do tipo "endereçoqualquer@queremossaber.org", que será especificamente criado para o seu pedido.
+<div id="left_column_flip">
+<h1 id="privacy"><%= @title %></h1>
+<dl>
+<dt id="email_address">Quem poderá ver meu endereço de e-mail? <a href="http://queremossaber.org.br/help/privacy#email_address">#</a></dt>
+<dd>Nós não vamos mostrar seu endereço de e-mail pra ninguém a não ser que sejamos obrigados pela lei, o que você nos peça para fazer isso. Isso significa que não mostraremos seu endereço de e-mail para o órgão público a quem você está enviando um pedido. Eles vão apenas ver um email do tipo "endereçoqualquer@queremossaber.org", que será especificamente criado para o seu pedido.
 
 Se você mandar uma mensagem para outro usuário do site, então o seu e-mail será revelado para esse usuário. Você será informado previamente de que isso vai acontecer.
+</dd>
 
-</dd><dt id="nasty_spam">Vocês vão mandar spams e mensagens indesejadas para o meu endereço de e-mail?</dt><dd>Não. Depois que você se cadastrar no Queremos Saber, nós apenas mandaremos para sua caixa postal e-mails relacionados aos pedidos de acesso à informação que você fizer, alertas relacionados aos pedidos de outras pessoas que você decidir acompanhar, ou mensagens enviadas por qualquer outra razão, quando você nos autorizar especificamente. Nós nunca daremos ou venderemos o seu endereço de e-mail para ninguém, a não ser que sejamos obrigados pela lei, ou que você nos peça para fazer isso.</dd><dt id="public_request">Por que o meu nome e o meu pedido aparecem publicamente no site?</dt><dd>Nós publicaremos seu pedido na Internet para que qualquer um possa ler e fazer uso das informações públicas que você conseguir por meio dele. Nós normalmente não deletamos nenhum pedido de informação do site (<a href="http://queremossaber.org.br/help/privacy#delete_requests">mais detalhes</a>).
+<dt id="nasty_spam">Vocês vão mandar spams e mensagens indesejadas para o meu endereço de e-mail?</dt>
+<dd>Não. Depois que você se cadastrar no Queremos Saber, nós apenas mandaremos para sua caixa postal e-mails relacionados aos pedidos de acesso à informação que você fizer, alertas relacionados aos pedidos de outras pessoas que você decidir acompanhar, ou mensagens enviadas por qualquer outra razão, quando você nos autorizar especificamente. Nós nunca daremos ou venderemos o seu endereço de e-mail para ninguém, a não ser que sejamos obrigados pela lei, ou que você nos peça para fazer isso.</dd>
+
+<dt id="public_request">Por que o meu nome e o meu pedido aparecem publicamente no site?</dt>
+<dd>Nós publicaremos seu pedido na Internet para que qualquer um possa ler e fazer uso das informações públicas que você conseguir por meio dele. Nós normalmente não deletamos nenhum pedido de informação do site (<a href="http://queremossaber.org.br/help/privacy#delete_requests">mais detalhes</a>).
 
 Seu nome está associado ao seu pedido, então ele precisa estar publicado também. Nós também vamos publicar o nome do servidor público que escrever uma resposta para o seu pedido. Usar o seu nome verdadeiro ajuda as pessoas a entrarem em contato com você para ajudá-lo na sua busca por informação, ou para cobrarem respostas junto com você.
 
 <strong>É mais comum que os órgãos públicos respondam pedidos feitos por cidadãos reais, com nome e sobrenome.  </strong>Veja a próxima pergunta para saber como agir se você não quer mesmo publicar o seu nome completo.
+</dd>
 
-</dd><dt id="real_name">Eu posso fazer um pedido de acesso à informação usando um pseudônimo?</dt><dd>Idealmente, você deve usar seu nome verdadeiro par fazer um pedido de acesso a informações públicas. Mas o órgão público também pode considerar o seu pedido se ele for feito por um pseudônimo ou apelido. Seja cuidadoso, porque não se identificar publicamente pode tornar impossível reclamar que o seu pedido não foi atendido.
+<dt id="real_name">Eu posso fazer um pedido de acesso à informação usando um pseudônimo?</dt>
+<dd>Idealmente, você deve usar seu nome verdadeiro par fazer um pedido de acesso a informações públicas. Mas o órgão público também pode considerar o seu pedido se ele for feito por um pseudônimo ou apelido. Seja cuidadoso, porque não se identificar publicamente pode tornar impossível reclamar que o seu pedido não foi atendido.
 
 Se você não quiser assinar o seu pedido de acesso à informação, existem algumas alternativas:
 <ul>
@@ -23,30 +33,39 @@ Se você não quiser assinar o seu pedido de acesso à informação, existem alg
 	<li>Você pode, se você estiver sem opções, pedir para que nós façamos o pedido de informações em seu nome. Por favor <a href="http://queremossaber.org.br/help/contact">nos contate</a>, explicando as boas razões pelas quais você não quer fazer o pedido em seu nome e não pode pedir que uma pessoa de confiança o faça por você. Nós não podemos fazer isso para todo mundo, mas podemos analisar algumas exceções bem justificadas.</li>
 </ul>
 Por favor não assine com nomes falsos e nem em nome de outra pessoa que não tenha lhe dado autorização.
+</dd>
 
-</dd><dt id="full_address">Um órgão público respondeu pelo site pedindo o endereço da minha casa!</dt><dd>Se um órgão público pedir o seu endereço físico completo, responda para eles dizendo que você prefere que as informações solicitadas sejam enviadas a você por e-mail, preferencialmente usando o Queremos Saber – já que o site mantém públicas e acessíveis para outras pessoas todos os pedidos e respostas recebidas. Faça a mesma coisa se eles pedirem que você faça seu pedido de acesso à informação pessoalmente, por meio de documentos a serem protocolados ou por carta.
+<dt id="full_address">Um órgão público respondeu pelo site pedindo o endereço da minha casa!</dt>
+<dd>Se um órgão público pedir o seu endereço físico completo, responda para eles dizendo que você prefere que as informações solicitadas sejam enviadas a você por e-mail, preferencialmente usando o Queremos Saber – já que o site mantém públicas e acessíveis para outras pessoas todos os pedidos e respostas recebidas. Faça a mesma coisa se eles pedirem que você faça seu pedido de acesso à informação pessoalmente, por meio de documentos a serem protocolados ou por carta.
 
 A Lei de Acesso à Informação Pública brasileira ainda está em fase de implementação. É importante que nós, cidadãos, criemos uma cultura de pedir informações ao governo da forma mais simples possível – esperando que mesmo assim nossos pedidos sejam respondidos prontamente. Dessa forma, poderemos influenciar os órgãos públicos para que, quando a lei "pegar", pedidos de acesso à informação feitos por email ou por plataformas abertas sejam contemplados sem nenhuma objeção.
 
 Em vários países do mundo, a lei ou as práticas políticas foram adaptadas para que os cidadãos pudessem fazer pedidos de informação por ferramentas digitais. O governo da Grã-Bretanha, por exemplo, utiliza uma ferramenta exatamente igual ao Queremos Saber para receber e responder aos pedidos de acesso à informação pública enviados pelos cidadãos. Use isso como argumento para convencer os órgãos públicos brasileiros a responderem às suas solicitações.
 
-</dd><dt id="postal_answer">Não, você não entendeu. Eles precisam de um endereço postal para poderem me enviar informações que só estão disponíveis no papel!</dt><dd>Se um órgão público tem apenas uma cópia em papel da informação que você quer, eles podem pedir o seu endereço físico para enviarem uma resposta. Para começar, tente persuadi-los a escanearem ou digitalizarem os documentos para você. Você pode inclusive se oferecer para presenteá-los com um scanner, o que pode ser um tanto constrangedor para o órgão público (ou pode convencê-los a finalmente comprar uma dessas máquinas incríveis).
+</dd>
+<dt id="postal_answer">Não, você não entendeu. Eles precisam de um endereço postal para poderem me enviar informações que só estão disponíveis no papel!</dt><dd>Se um órgão público tem apenas uma cópia em papel da informação que você quer, eles podem pedir o seu endereço físico para enviarem uma resposta. Para começar, tente persuadi-los a escanearem ou digitalizarem os documentos para você. Você pode inclusive se oferecer para presenteá-los com um scanner, o que pode ser um tanto constrangedor para o órgão público (ou pode convencê-los a finalmente comprar uma dessas máquinas incríveis).
 
 Se não funcionar, e se você quiser fornecer o seu endereço postal para que o órgão público envie as informações para você por correio, marque seu pedido como "Eles vão responder pelo correio", e nós forneceremos a você um e-mail para o qual você poderá fornecer o seu endereço.
 
-</dd><dt id="delete_requests">Você pode deletar os meus pedidos, ou alterar o meu nome?</dt><dd>O Queremos Saber é um arquivo público e permanente de pedidos de acesso à informação pública. Apesar de você achar que uma resposta a um pedido não é mais útil, outros podem estar interessados nessa mesma informação. Por isso, não deletamos nenhum pedido do site.
+</dd>
+<dt id="delete_requests">Você pode deletar os meus pedidos, ou alterar o meu nome?</dt>
+<dd>O Queremos Saber é um arquivo público e permanente de pedidos de acesso à informação pública. Apesar de você achar que uma resposta a um pedido não é mais útil, outros podem estar interessados nessa mesma informação. Por isso, não deletamos nenhum pedido do site.
 
 Em algumas circunstâncias exepcionais nós podemos remover ou mudar o seu nome no site. Dessa mesma forma, nós podemos remover outras informações pessoais suas do Queremos Saber. <a href="http://queremossaber.org.br/help/privacy#takedown">Veja a próxima questão.</a>
+</dd>
 
-</dd><dt id="takedown">Você pode retirar informações pessoais minhas do site? <a href="http://queremossaber.org.br/help/privacy#takedown">#</a></dt><dd>Se você vir qualquer informação sobre você que você gostaria que nós retirássemos do site, por favor, <a href="http://queremossaber.org.br/help/contact">nos avise</a>. Especifique exatamente que informação você acredita que deve ser retirada e porque, além de onde ela aparece no site.
+<dt id="takedown">Você pode retirar informações pessoais minhas do site? <a href="http://queremossaber.org.br/help/privacy#takedown">#</a></dt>
+<dd>Se você vir qualquer informação sobre você que você gostaria que nós retirássemos do site, por favor, <a href="http://queremossaber.org.br/help/contact">nos avise</a>. Especifique exatamente que informação você acredita que deve ser retirada e porque, além de onde ela aparece no site.
 
 Se por acaso você acidentalmente publicar informações sensíveis que não deveriam ter sido expostas, nós normalmente vamos removê-las. Na regra, nós vamos apenas retirar do site informações cuja retirada tenha sido pedida pelo próprio usuário a que elas se referem. Mas agradecemos que qualquer um nos avise quando houver informações sensíveis sobre cidadãos comuns espalhadas pelo site.
 
 Nós consideramos que nomes de servidores do governo são informações de interesse público, portando eles não serão removidos do site.
 
 Para outros tipos de requisição: nós vamos analisar o nível de interesse público das informações antes de retirar qualquer dado do site. Nós não podemos editar os arquivos enviados pelo poder público como resposta dos pedidos de informação, mas em casos de extrema exceção poderemos pedir que o órgão público reenvie uma resposta removendo informações pessoais ou sensíveis.
+</dd>
+</dl>
 
-</dd></dl>Leia mais na ajuda para <a href="http://queremossaber.org.br/help/officers">órgãos públicos</a> --&gt;
+Leia mais na ajuda para <a href="http://queremossaber.org.br/help/officers">órgãos públicos</a> --&gt;
 
 <div id="hash_link_padding"></div>
-
+</div>
