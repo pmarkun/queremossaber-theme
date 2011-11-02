@@ -1,184 +1,52 @@
-<% @title = "Your privacy" %>
+<% @title = "Sua privacidade" %>
 
 <%= render :partial => 'sidebar' %>
 
-<div id="left_column_flip">
-  <h1 id="privacy"><%= @title %></h1>
-  <dl>
+<h1 id="privacy">Sua privacidade</h1>
+<dl><dt id="email_address">Quem poderá ver meu endereço de e-mail? <a href="http://queremossaber.org.br/help/privacy#email_address">#</a></dt><dd>Nós não vamos mostrar seu endereço de e-mail pra ninguém a não ser que sejamos obrigados pela lei, o que você nos peça para fazer isso. Isso significa que não mostraremos seu endereço de e-mail para o órgão público a quem você está enviando um pedido. Eles vão apenas ver um email do tipo "endereçoqualquer@queremossaber.org", que será especificamente criado para o seu pedido.
 
-  <dt id="email_address">Who gets to see my email address? <a href="#email_address">#</a> </dt>
+Se você mandar uma mensagem para outro usuário do site, então o seu e-mail será revelado para esse usuário. Você será informado previamente de que isso vai acontecer.
 
-  <dd><p>We will not disclose your email address to anyone unless we are obliged to by law,
-  or you ask us to. This includes the public authority that you are sending a
-  request to.  They only get to see an email address 
-  @whatdotheyknow.com which is specific to that request.  </p>
-  <p>If you send a message to another user on the site, then it will reveal your
-  email address to them. You will be told that this is going to happen.</p>
-  </dd>
+</dd><dt id="nasty_spam">Vocês vão mandar spams e mensagens indesejadas para o meu endereço de e-mail?</dt><dd>Não. Depois que você se cadastrar no Queremos Saber, nós apenas mandaremos para sua caixa postal e-mails relacionados aos pedidos de acesso à informação que você fizer, alertas relacionados aos pedidos de outras pessoas que você decidir acompanhar, ou mensagens enviadas por qualquer outra razão, quando você nos autorizar especificamente. Nós nunca daremos ou venderemos o seu endereço de e-mail para ninguém, a não ser que sejamos obrigados pela lei, ou que você nos peça para fazer isso.</dd><dt id="public_request">Por que o meu nome e o meu pedido aparecem publicamente no site?</dt><dd>Nós publicaremos seu pedido na Internet para que qualquer um possa ler e fazer uso das informações públicas que você conseguir por meio dele. Nós normalmente não deletamos nenhum pedido de informação do site (<a href="http://queremossaber.org.br/help/privacy#delete_requests">mais detalhes</a>).
 
-  <dt id="nasty_spam">Will you send nasty, brutish spam to my email address? <a href="#nasty_spam">#</a> </dt>
-  <dd>Nope. After you sign up to WhatDoTheyKnow we will only send you emails
-  relating to a request you made, an email alert that you have signed up for,
-  or for other reasons that you specifically authorise. We will never give or
-  sell your email addresses to anyone else, unless we are obliged to by law, or
-  you ask us to.
-  </dd>
+Seu nome está associado ao seu pedido, então ele precisa estar publicado também. Nós também vamos publicar o nome do servidor público que escrever uma resposta para o seu pedido. Usar o seu nome verdadeiro ajuda as pessoas a entrarem em contato com você para ajudá-lo na sua busca por informação, ou para cobrarem respostas junto com você.
 
-  <dt id="public_request">Why will my name and my request appear publicly on the site? <a href="#public_request">#</a> </dt>
+<strong>É mais comum que os órgãos públicos respondam pedidos feitos por cidadãos reais, com nome e sobrenome.  </strong>Veja a próxima pergunta para saber como agir se você não quer mesmo publicar o seu nome completo.
 
-  <dd>
-  <p>We publish your request on the Internet so that anybody can read it and
-  make use of the information that you have found. We do not normally delete
-  requests (<a href="#delete_requests">more details</a>).
-  </p>
-  <p>
-  Your name is tangled up with your request, so has to be published as well.
-  It is only fair, as we're going to publish the name of the civil servant who
-  writes the response to your request.  Using your real name also helps people
-  get in touch with you to assist you with your research or to campaign with you. 
-  </p>
-  <p>By law, you must use your real name for the request to be a valid Freedom of
-  Information request. See the next question for alternatives if you do not want
-  to publish your full name.
-  </p>
-  </dd>
+</dd><dt id="real_name">Eu posso fazer um pedido de acesso à informação usando um pseudônimo?</dt><dd>Idealmente, você deve usar seu nome verdadeiro par fazer um pedido de acesso a informações públicas. Mas o órgão público também pode considerar o seu pedido se ele for feito por um pseudônimo ou apelido. Seja cuidadoso, porque não se identificar publicamente pode tornar impossível reclamar que o seu pedido não foi atendido.
 
-  <dt id="real_name">Can I make an FOI request using a pseudonym? <a href="#real_name">#</a> </dt>
-
-
-  <dd>
-  <p>Technically, you must use your real name for your request to be a valid Freedom of Information request in law. See this
-  <a href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/detailed_specialist_guides/name_of_applicant_fop083_v1.pdf">guidance from the Information Commissioner</a> (January 2009).
-  </p>
-
-<p>However, the same guidance also says it is good practice for the public
-authority to still consider a request made using an obvious pseudonym.
-You should refer to this if a public authority refuses a request because you
-used a pseudonym.</p>
-
-<p>Be careful though, even if the authority follows this good practice, the
-pseudonym will probably make it impossible for you to complain to the
-Information Commissioner later about the handling of your request.
-</p>
-
-<p>There are several good alternatives to using a pseudonym.</p>
-
+Se você não quiser assinar o seu pedido de acesso à informação, existem algumas alternativas:
 <ul>
-<li>Use a different form of your name. The guidance says
-that "Mr Arthur Thomas Roberts" can make a valid request as "Arthur Roberts",
-"A. T. Roberts", or "Mr Roberts", but <strong>not</strong> as "Arthur" or "A.T.R.". 
-</li>
-<li>Women may use their maiden name.</li>
-<li>In most cases, you may use any name by which you are "widely known and/or
-is regularly used".
-<li>Use the name of an organisation, the name of a company, the trading name of
-a company, or the trading name of a sole trader.
-<li>Ask someone else to make the request on your behalf. 
-<li>You may, if you are really stuck, ask us to make the request on
-your behalf. Please <a href="/help/contact">contact us</a> with
-a good reason why you cannot make the request yourself and cannot
-ask a friend to. We don't have the resources to do this for everyone.
+	<li>Use uma forma diferente do seu nome. Sr. José da Silva pode ser considerado a mesma coisa do que José Silva, J. Silva ou J.S.</li>
+	<li>Use o nome de uma organização da qual você faça parte, de uma empresa, ou de uma comunidade.</li>
+	<li>Peça a alguém para fazer o pedido de informações por você.</li>
+	<li>Você pode, se você estiver sem opções, pedir para que nós façamos o pedido de informações em seu nome. Por favor <a href="http://queremossaber.org.br/help/contact">nos contate</a>, explicando as boas razões pelas quais você não quer fazer o pedido em seu nome e não pode pedir que uma pessoa de confiança o faça por você. Nós não podemos fazer isso para todo mundo, mas podemos analisar algumas exceções bem justificadas.</li>
 </ul>
+Por favor não assine com nomes falsos e nem em nome de outra pessoa que não tenha lhe dado autorização.
 
-<p>Please do not try to impersonate someone else.</p>
+</dd><dt id="full_address">Um órgão público respondeu pelo site pedindo o endereço da minha casa!</dt><dd>Se um órgão público pedir o seu endereço físico completo, responda para eles dizendo que você prefere que as informações solicitadas sejam enviadas a você por e-mail, preferencialmente usando o Queremos Saber – já que o site mantém públicas e acessíveis para outras pessoas todos os pedidos e respostas recebidas. Faça a mesma coisa se eles pedirem que você faça seu pedido de acesso à informação pessoalmente, por meio de documentos a serem protocolados ou por carta.
 
-</dd>
+A Lei de Acesso à Informação Pública brasileira ainda está em fase de implementação. É importante que nós, cidadãos, criemos uma cultura de pedir informações ao governo da forma mais simples possível – esperando que mesmo assim nossos pedidos sejam respondidos prontamente. Dessa forma, poderemos influenciar os órgãos públicos para que, quando a lei "pegar", pedidos de acesso à informação feitos por email ou por plataformas abertas sejam contemplados sem nenhuma objeção.
 
-<dt id="full_address">They've asked for my postal address! <a href="#full_address">#</a> </dt>
+Em vários países do mundo, a lei ou as práticas políticas foram adaptadas para que os cidadãos pudessem fazer pedidos de informação por ferramentas digitais. O governo da Grã-Bretanha, por exemplo, utiliza uma ferramenta exatamente igual ao Queremos Saber para receber e responder aos pedidos de acesso à informação pública enviados pelos cidadãos. Use isso como argumento para convencer os órgãos públicos brasileiros a responderem às suas solicitações.
 
-<dd>
-<p>If a public authority asks you for your full, physical address, reply to them saying
-that section 8.1.b of the FOI Act asks for an "address for correspondence", 
-and that the email address you are using is sufficient. 
-</p>
-<p>
-The Ministry of Justice has <a href="http://www.justice.gov.uk/guidance/foi-procedural-what.htm">guidance
-on this</a> &ndash;
-<em>"As well as hard copy written correspondence, requests that are
-transmitted electronically (for example, in emails) are acceptable 
-... If a request is received by email and no postal address is given, the email
-address should be treated as the return address."
-</em>
-</p>
-<p>As if that isn't enough, the Information Commissioner's 
-<a href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/practical_application/foi_hints_for_practitioners_handing_foi_and_eir_requests_2008_final.pdf">Hints for Practitioners</a> say
-<em>"Any correspondence could include a request for information. If it is written (this includes e-mail), legible, gives the name of the applicant, an address for reply (which could be electronic), and includes a description of the information required, then it will fall within the scope of the legislation."</em>
-</p>
-</dd>
+</dd><dt id="postal_answer">Não, você não entendeu. Eles precisam de um endereço postal para poderem me enviar informações que só estão disponíveis no papel!</dt><dd>Se um órgão público tem apenas uma cópia em papel da informação que você quer, eles podem pedir o seu endereço físico para enviarem uma resposta. Para começar, tente persuadi-los a escanearem ou digitalizarem os documentos para você. Você pode inclusive se oferecer para presenteá-los com um scanner, o que pode ser um tanto constrangedor para o órgão público (ou pode convencê-los a finalmente comprar uma dessas máquinas incríveis).
 
-<dt id="postal_answer">No no, they need a postal address to send a paper response! <a href="#postal_answer">#</a> </dt>
+Se não funcionar, e se você quiser fornecer o seu endereço postal para que o órgão público envie as informações para você por correio, marque seu pedido como "Eles vão responder pelo correio", e nós forneceremos a você um e-mail para o qual você poderá fornecer o seu endereço.
 
-<dd>
-<p>If an authority only has a paper copy of the information that you want,
-they may ask you for a postal address. To start with, try persuading them
-to scan in the documents for you. You can even <a href="http://www.whatdotheyknow.com/request/car_parking_charges_policy_and_a#outgoing-532">offer to gift them a scanner</a>, which in that particular case
-embarrassed the authority into finding one they had already.</p>
+</dd><dt id="delete_requests">Você pode deletar os meus pedidos, ou alterar o meu nome?</dt><dd>O Queremos Saber é um arquivo público e permanente de pedidos de acesso à informação pública. Apesar de você achar que uma resposta a um pedido não é mais útil, outros podem estar interessados nessa mesma informação. Por isso, não deletamos nenhum pedido do site.
 
-<p>If that doesn't work, and you want to provide your postal address privately
-in order to receive the documents, mark your request as "They are going to reply by post", and it will
-give you an email address to use for that purpose.</p>
-</dd>
+Em algumas circunstâncias exepcionais nós podemos remover ou mudar o seu nome no site. Dessa mesma forma, nós podemos remover outras informações pessoais suas do Queremos Saber. <a href="http://queremossaber.org.br/help/privacy#takedown">Veja a próxima questão.</a>
 
-<dt id="delete_requests">Can you delete my requests, or alter my name?  <a href="#delete_requests">#</a> </dt>
+</dd><dt id="takedown">Você pode retirar informações pessoais minhas do site? <a href="http://queremossaber.org.br/help/privacy#takedown">#</a></dt><dd>Se você vir qualquer informação sobre você que você gostaria que nós retirássemos do site, por favor, <a href="http://queremossaber.org.br/help/contact">nos avise</a>. Especifique exatamente que informação você acredita que deve ser retirada e porque, além de onde ela aparece no site.
 
-<dd>
+Se por acaso você acidentalmente publicar informações sensíveis que não deveriam ter sido expostas, nós normalmente vamos removê-las. Na regra, nós vamos apenas retirar do site informações cuja retirada tenha sido pedida pelo próprio usuário a que elas se referem. Mas agradecemos que qualquer um nos avise quando houver informações sensíveis sobre cidadãos comuns espalhadas pelo site.
 
-<p><%= site_name %> is a permanent, public archive of Freedom of
-Information requests. Even though you may not find the response to
-a request useful any more, it may be of interest to others. For this
-reason, we will not delete requests.
-</p>
+Nós consideramos que nomes de servidores do governo são informações de interesse público, portando eles não serão removidos do site.
 
-<p>Under exceptional circumstances we may remove or change your name
-on the website, <a href="#takedown">see the next question</a>.
-Similarly, we may also remove other personal information.
-</p>
+Para outros tipos de requisição: nós vamos analisar o nível de interesse público das informações antes de retirar qualquer dado do site. Nós não podemos editar os arquivos enviados pelo poder público como resposta dos pedidos de informação, mas em casos de extrema exceção poderemos pedir que o órgão público reenvie uma resposta removendo informações pessoais ou sensíveis.
 
-<p>If you're worried about this before you make your request,
-see the section on <a href="#real_name">pseudonyms</a>.</p>
+</dd></dl>Leia mais na ajuda para <a href="http://queremossaber.org.br/help/officers">órgãos públicos</a> --&gt;
 
-</dd>
-
-<dt id="takedown">Can you take down personal information about me? <a href="#takedown">#</a> </dt>
-
-<dd> 
-
-<p>If you see any personal information about you on the site which you'd like
-us to remove or hide, then please <a href="/help/contact">let us know</a>.
-Specify exactly what information you believe to be problematic and why, and
-where it appears on the site.</p>
-
-<p>If it is sensitive personal information that has been accidentally
-posted, then we will usually remove it. Normally we will only consider
-requests to remove personal information which come from the individual
-concerned, but for sensitive information we would appreciate anyone
-pointing out anything they see.</p>
-
-<p>We consider that there is a strong public interest in
-retaining the names of officers or servants of public authorities. We will only
-remove such names in exceptional circumstances, such as where the disclosure of
-a name and position of employment would substantially risk an individual's
-safety. If you are such an official and you wish to have your name removed for
-such an urgent reason, you must supply us with a request to do so from your
-line manager. This request must demonstrate that a risk has been perceived
-which outweighs the public interest, and must demonstrate that efforts have
-been made to conceal the name on the organisation's own website.</p>
-
-<p>For all other requests we apply a public interest test to decide
-whether information should be removed. 
-<a href="http://www.statutelaw.gov.uk/content.aspx?ActiveTextDocId=3190650"> Section 32</a> 
-of the Data Protection Act 1998 permits us to do this, as the material we
-publish is journalistic. We cannot easily edit many types of attachments (such
-as PDFs, or Microsoft Word or Excel files), so we will usually ask
-that authorities resend these with the personal information removed.</p>
-
-</dd>
-
-
-</dl>
-
-<p><strong>Learn more</strong> from the help for <a href="/help/officers">FOI officers</a> --&gt;
-
-  <div id="hash_link_padding"></div>
-</div>
+<div id="hash_link_padding"></div>
 
