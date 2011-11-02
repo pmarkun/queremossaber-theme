@@ -1,4 +1,4 @@
-<% @title = "Contact us" %>
+<% @title = "Contato" %>
 
 <%= foi_error_messages_for :contact %>
 
@@ -7,15 +7,14 @@
 <div id="contact_preamble">
 
     <% if !flash[:notice] %>
-        <h2>BLABLABLBAContact an authority to get official information</h2>
+        <h2>Contate os orgãos públicos para obter informações oficiais</h2>
         <ul>
-            <li><a href="/new">Go here</a> to make a request, in public, for information
-            from UK public authorities.</li>
+            <li><a href="/new">Clique aqui</a> para fazer um pedido de acesso a informação aos orgãos públicos.</li>
 
             <li>
-            Asking for private information about yourself?
-            Please read our help page about
-            <a href="/help/requesting#data_protection">data protection</a>.
+            Pedindo informação pessoal sobre si mesmo?
+            Por favor leia nossa página de ajuda sobre
+            <a href="/help/requesting#data_protection">dados pessoais</a>.
             </li>
         </ul>
 
@@ -30,21 +29,19 @@
 
     <% end %>
 
-    <h2>BLBALBABLABContact the WhatDoTheyKnow team</h2>
+    <h2>Fale com a equipe do Queremos Saber</h2>
     <% if !flash[:notice] %>
             <ul>
             <li>
-            Please read the  <a href="/help/about">help page</a> first, as it may
-            answer your question quicker. 
+            Por favor leia a página de <a href="/help/about">ajuda</a> antes, já que pode ser que sua pergunta já tenha sido respondida.
             </li>
             
-            <li>We'd love to hear how you've found using this site.
-               Either fill in this form, or send an email to <a
+            <li>Nós gostariamos que você nos contasse sobre o que achou do site.
+               Preencha o formulário ou envie um email para <a
                href="mailto:<%=@contact_email%>"><%=@contact_email%></a>
             </li>
 
-            <li>We are a <strong>charity</strong> and not part of the
-            Government.</li>
+            <li>Nós somos um grupo voluntário e não uma parte do Governo.</li>
             </ul>
     <% end %>
 </div>
@@ -53,53 +50,52 @@
 
     <% if not @user %>
         <p>
-            <label class="form_label" for="contact_name">Your name:</label>
+            <label class="form_label" for="contact_name">Seu nome:</label>
             <%= f.text_field :name, :size => 20 %>
             (or <%= link_to "sign in", signin_url(:r => request.request_uri) %>)
         </p>
 
         <p>
-            <label class="form_label" for="contact_email">Your email:</label>
+            <label class="form_label" for="contact_email">Seu email:</label>
             <%= f.text_field :email, :size => 20 %>
         </p>
     <% end %>
 
     <p>
-        <label class="form_label" for="contact_subject">Subject:</label> 
+        <label class="form_label" for="contact_subject">Assunto:</label> 
         <%= f.text_field :subject, :size => 50 %>
     </p>
 
     <p>
-        <label class="form_label" for="contact_message">Message to website:</label> 
+        <label class="form_label" for="contact_message">Mensagem para o site:</label> 
         <%= f.text_area :message, :rows => 10, :cols => 60 %>
     </p>
 
     <% if !@last_request.nil? %>
         <p>
-            <label class="form_label" for="contact_message">Include link to request:</label> 
+            <label class="form_label" for="contact_message">Incluir um link para o pedido:</label> 
             <%=request_link(@last_request) %>
             <%= submit_tag "remove", :name => 'remove' %>
         </p>
     <% end %>
     <% if !@last_body.nil? %>
         <p>
-            <label class="form_label" for="contact_message">Include link to authority:</label> 
+            <label class="form_label" for="contact_message">Incluir um link para o orgão:</label> 
             <%=public_body_link(@last_body) %>
             <%= submit_tag "remove", :name => 'remove' %>
         </p>
     <% end %>
 
     <p class="form_note">
-    We can only help you with <strong>technical problems</strong>, or questions
-    about Freedom of Information. See the top of this page if you would like to
-    contact the Government.
+    Nós podemos ajudar apenas com <strong>problemas técnicos</strong>, ou questões
+    sobre acesso à informação. Veja o topo dessa página se você gostaria de falar com o Governo.
     </P>
 
 
     <div class="form_button">
         <%= hidden_field_tag(:submitted_contact_form, 1) %>
         <%= submit_tag "Send message to the charity" %>
-        &lt;-- we run this site, not the Government!
+        &lt;-- nós mantemos esse site, não o Governo!
     </div>
 
 <% end %>
