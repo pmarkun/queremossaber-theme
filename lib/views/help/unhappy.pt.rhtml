@@ -1,0 +1,87 @@
+<% @title = "Descontente com a resposta que você teve sobre seu pedido?" %>
+
+
+<% if !@info_request.nil? %>
+<h1>Descontente com a resposta que você teve sobre seu pedido '<%=request_link(@info_request) %>'?
+</h1>
+<% else %>
+<h1>Descontente com a resposta que você teve?</h1>
+<% end %>
+
+<p>Se ...</p>
+
+<ul>
+<li>Você não recebeu uma resposta em, no máximo, 30 dias</li>
+<li>Você não conseguiu todas as informações que você solicitou <strong>ou</strong></li>
+<li>O seu pedido foi recusado, mas sem uma razão válida segundo a lei</li>
+</ul>
+
+<p>... você pode</p>
+
+<ol>
+<li>Apresentar <strong>recurso</strong>.</li>
+<li>Se isso não ajudar, reclamar em  <strong>órgãos especializados</strong>.</li>
+<li>Buscar <strong>outro meio</strong> para obter sua resposta.</li>
+</ol>
+
+<h1 id="internal_review">1. Apresentar recurso <a class="hover_a" href="#internal_review">#</a> </h1>
+
+<p>
+<% if !@info_request.nil? %>
+    <%= link_to "Request an internal review", show_response_no_followup_url(:id => @info_request.id, :incoming_message_id => nil) + "?internal_review=1#followup", :class => 'link_button_green' %> e, em seguida, escrever uma mensagem pedindo que revejam seu pedido. O recurso deve ser direcionado à autoridade hierarquicamente superior à que
+ negou, ou não respondeu, seu pedido de informação.
+<% else %>
+    No final da página do pedido <%= site_name %> escolha
+    "solicitar revisão". Então escreva uma mensagem pedindo por uma revisão do seu pedido.
+    Você pode querer incluir um link para a página do seu pedido,
+    para deixar claro de qual pedido você esta falando.
+<% end %>
+</p>
+
+<p>Essa manifestação deve ser rápida, no prazo de 5 dias, fornecendo as informações que você solicitou originalmente, ou informando que a revisão mantém a decisão de negar o pedido.</p>
+
+<p>Mas como saber quem é esse ser superior?</p>
+
+<p>Se o pedido de informação foi negado ou veio incompleto, veja quem assinou como responsável pela resposta. Normalmente, documentos oficiais já indicam,, os órgão a que se subordina aquele que respondeu. Exemplo do cabeçalho de um documento da Diretoria de Vigilância Sanitária de Alimentos:</p>
+
+<blockquote>Secretaria de Estado da Saúde de Minas Gerais<br>
+Superintendência de Vigilância Sanitária<br>
+Diretoria de Vigilância Sanitária de Alimentos</blockquote>
+
+<p>Se seu pedido fosse direcionado ao diretor de vigilância sanitária, então o recurso iria para o superintendente.</p>
+
+<p>E se não houver resposta?</p>
+
+<p>Bem, aí vale dar uma ligada para o órgão para o qual você fez o pedido ou dar uma pesquisada no Google para descobrir qual é o ente hierarquicamente superior àquele que ficou em silêncio.</p>
+
+<h1 id="complaining">2. Se isso não ajudar, reclamar em órgãos especializados <a class="hover_a" href="#complaining">#</a> </h1>
+
+<p>Se o recurso ao pedido de Acesso a Informação que foi negado não for aceito pela autoridade superior e esta for de <strong>ente do Poder Executivo
+ Federal</strong>, recorra à Controladoria-Geral da União. E, se esta também negar, ainda dá para recorrer à Comissão Mista de Reavaliação de Informações (quando ela for criada, como previsto no art. 35 da Lei de Acesso).</p>
+
+<p>Em qualquer caso, é possível reclamar ao <strong>Ministério Público</strong> (estadual ou federal, dependendo do seu caso), que é a instituição responsável por garantir que os poderes públicos respeitem direitos constitucionais. Entre em contato com um promotor (estadual) ou procurador (federal) para contar o que aconteceu e saber como esse problema será resolvido.</p>
+
+<p>Para facilitar o fornecimento das informações relevantes ao Ministério Público, 
+<% if !@info_request.nil? %>
+    inclua um link para seu pedido 
+    <strong><%=h main_url(request_url(@info_request)) %></strong>
+<% else %>
+    include a link to your request on <%= site_name %>
+<% end %>
+em sua queixa ou imprima a página inteira do seu pedido e todos os anexos.
+</p>
+
+<p><%= site_name %> não tem facilidades especiais para lidar com um pedido nesta fase, mas será muito útil se você deixar anotações sobre sua queixa para manter as pessoas informadas do progresso.</p>
+
+<p>Um aviso. Um processo iniciado pelo Ministério Público pode levar literalmente anos para obter um resultado. Se você chegar a este ponto, você deve aceitar que dificilmente vai obter a informação rapidamente por este meio. Mas se você quer ajudar na luta para melhorar o Acesso a Informação, vale a pena. Você também pode tentar e obter as informações <strong>por outros meios...</strong></p>
+
+<h1 id="other_means">3. Buscar outro meio para obter sua resposta <a class="hover_a" href="#other_means">#</a> </h1>
+
+<p>Você pode tentar prosseguir na sua investigação de outras maneiras.
+
+<ul>
+<li>Faça um <strong>novo pedido de informações</strong>,ou, indiretamente, solicite a documentação relativa a questões no seu pedido recusado. <a href="/help/contact">Peça idéias para a gente</a> se você está com dificuldades.</li>
+<li>Se <strong>outras autoridades públicas</strong> ou empresas estão envolvidas, você pode fazer o pedido de informações para eles.</li>
+<li>Escreva para <strong>seu vereador/deputado estadual/deputado federal</strong> e peça ajuda dele para encontrar a resposta. Parlamentares podem solicitar informações diretamente às autoridades do Poder Executivo (já que uma das funções do Poder Legislativo é fiscalização do Executivo).</li>
+<li>Peça a <strong>outros pesquisadores</strong> que estão interessados ​​em um problema semelhante ao seu para darem idéias. Às vezes você pode encontrá-los neste site como usuários registrados.</li>
+</ul>
